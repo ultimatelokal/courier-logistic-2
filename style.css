@@ -1,0 +1,685 @@
+*,*::after, *::before  {
+  padding: 0;
+  margin: 0;
+  /* box-sizing:content-box; */
+}
+
+html, body {
+   overflow-x: hidden; 
+   font-family: 'Roboto', sans-serif;
+   background-color: #f9f9fb;
+  }
+
+
+  /* ====== Nav ======== */
+
+  ul{
+    list-style: none;
+  }
+
+  .collapse ul{
+    font-size: 200px;
+  }
+/* customer login nav */
+  .nav-login-container{
+    margin-top: -20px;
+    position:sticky;
+  }
+
+  .nav-login a{
+    text-decoration: none;
+    color: #e7d8de;
+    font-size: 15px;
+  }
+
+  .nav-login a:hover{
+    color: aliceblue;
+  }
+
+  .nav-login i{
+    font-size: 18px;
+  }
+
+  .nav-login a{
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .nav-login a:hover{
+    color: #fff;
+  }
+/* ============== carousel =================*/
+  .carousel img{
+    max-height: 650px;
+  }
+
+  .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-container h5{
+    color: white;
+    font-size: 3vw;
+    letter-spacing: 5px;
+  }
+
+  .carousel-container p{
+    color: white;
+    font-size: 1vw;
+    font-weight: medium;
+    letter-spacing: 5px;
+  }
+
+
+/* =======  banner ========= */
+
+.card-img-overlay{
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card-img-overlay h5{
+  color: white;
+  font-size: 3vw;
+  letter-spacing: 5px;
+}
+
+.card-img-overlay p{
+  color: white;
+  font-size: 1vw;
+  font-weight: medium;
+  letter-spacing: 5px;
+}
+
+/* ========== HOME PAGE ============= */
+
+.homePage_ad{
+  margin-top: 100px;
+ }
+
+.homePage_img{
+  margin-top: 10px;
+}
+
+.homePage_ad h4{
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ac6d7e;
+}
+
+.homePage_ad h1{
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: #96304c; 
+}
+
+.homePage_ads2 .card-title, .homePage_Offer .card-title{
+  color: #96304c; 
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.homePage_ads2 .card-body p, .homePage_Offer .card-body p{
+  color: #6b6567; 
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.homePage_Offer {
+  margin-top: -35px;
+  margin-bottom: 35px;
+}
+
+.homePage_ads2 .card-body li{
+  color: #6b6567; 
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.accordion-body .card-body{
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.accordion-body .card-body .btn{
+
+  margin-top: -5px;
+  position: sticky;
+
+}
+
+.homePage_Offer .card-body li{
+  font-size: 14px;
+}
+
+/* ======== About US ========= */
+
+.aboutUsPage h2, .aboutUs_mis-vis h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #96304c; 
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.aboutUs_mis-vis h5{
+  color: #96304c; 
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.aboutUsPage .img-fluid{
+  background-color: #f9f9fb;
+}
+
+.aboutUsPage p, .aboutUs_mis-vis p {
+  color: #6b6567;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.aboutUsPage strong{
+  color: #96304c; 
+  letter-spacing: 1px;
+}
+
+.aboutUsPage span{
+  color: #96304c; 
+  letter-spacing: 1px;
+}
+
+.aboutUs_mis-vis h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.aboutUs_mis-vis a, .aboutUs_mis-vis a::after,.aboutUs_mis-vis a::before{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  color: black;
+}
+
+.aboutUs_mis-vis a:hover{
+  color: rgb(141, 85, 85);
+}
+
+
+/* ======== Testimonials ========= */
+
+/* cards */
+
+.testimonials_title h3{
+  color: #ab3470;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.testimonials_title p{
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.testimonials, .testimonials::after .testimonials::before{
+  transition: 0.5s;
+}
+
+.testimonials h5{
+  color: #ab3470;
+}
+
+.testimonials h5 span{
+  color: #ffd900;
+  font-size: 12px;
+}
+.testimonials a,.testimonials a::after,.testimonials a::before{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  color: black;
+}
+
+.testimonials a:hover{
+  color: rgb(141, 85, 85);
+}
+/* cards end here */
+
+
+.gallery-carousel{
+  display: none;
+}
+
+.gallery-container
+{
+  display: block;
+}
+/* =======  CONTACT US PAGE ========= */
+
+.contactPage-header{
+/* color:#fff; */
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.contactPage-header h1{
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  }
+
+  .contactPage-header p{
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+
+  .form-container{    
+    width: 50%;
+    margin: auto;    
+    /* border-style: groove;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-width: 1px; */
+  }
+
+  .form-body{
+    background-color: #f6f6f6;
+    border-style: groove;
+    border-top: none;
+    border-radius: 5px;
+    border-color: black;
+    border-width: .5px;
+    margin: auto;
+  }
+  .form-head{
+    background-color:#96304c;
+    border-style: groove;
+    border-top-right-radius: 5;
+    border-top-left-radius: 5;
+    border-color: black;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+  }
+  .form-head h4{
+    color: #f6f6f6;
+ 
+    padding: 20px;
+  }
+
+  .contactPage-main button{
+    font-weight: 400;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+    border-radius: 2px;
+  }
+
+  .contactPage-main input{
+    width: 90%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: black;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 2px;
+    padding: 5px;
+    margin: 15px;
+    outline: none;
+  }
+
+  textarea{
+    width: 90%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 500;
+    background-color: transparent;      
+    padding: 5px;
+    margin: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  .contactPage-main{
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+
+
+  .info-container h2{
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ab3470;
+    margin: auto;
+  }
+
+  .need-help-title img{
+    width: 250px;
+  }
+
+  .info-container p{
+    font-weight: 400;
+    letter-spacing: 1;
+  }
+
+  .need-help-title{
+    margin-bottom: 20px;
+  }
+
+  .need-help-body p{
+    color: #6b6567;
+    font-weight: 500;
+  }
+
+  .contact-info{
+    color:#6b6567;
+  }
+
+  .contact-info strong{
+    color:#ab3470;
+  }
+
+  .contact-info  a, .contact-info  a::after,.contact-info  a::before{
+    text-decoration: none;
+    font-weight: 400;
+    /* font-size: 13px; */
+    color: #6b6567;;
+  }
+  
+  .contact-info  a:hover{
+    color: rgb(141, 85, 85);
+  }
+
+  .info-container{
+    margin:auto;
+  }
+/* =======  FOOTER ========= */
+
+footer{
+  padding-bottom: 1px;
+  font-size: 15px;
+  font-weight: 400;
+
+ 
+}
+
+footer .d-flex{
+  padding-top: 10px;
+  color: #e7d8de;
+}
+
+footer a{
+  text-decoration: none;
+  color: #e7d8de;
+}
+
+footer a:hover{
+  color: #fff;
+}
+
+.footer-organize{
+  display: flex;
+}
+
+footer .copy-right{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/************** 404 ErROR  ********************/
+
+.error-container{
+  height: 700px;
+}
+
+.error-container div{
+  margin: auto;
+}
+
+.error-container h1{
+  /* font-size: 6rem; */
+  letter-spacing: 25px;
+  font-weight: 300;
+}
+
+.error-container h4{
+  /* font-size: 6rem; */
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* =======  media query =========== */
+
+@media only screen and (max-width:770px) {
+
+  .error-container .errorPage_ad{
+    /* background-color: #96304c; */
+    margin-top: -20px;
+   text-align: center;
+  }
+
+  .error-container h1{
+    font-size: 5em;
+  }
+
+}
+
+
+@media only screen and (max-width:1000px){
+
+  /* =========== banner ========== */
+  .card-img-overlay{
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .card-img-overlay h5{
+    color: white;
+    font-size: 5vw;
+    letter-spacing: 0px;
+  }
+  
+  .card-img-overlay p{
+    color: white;
+    font-size: 2vw;
+    font-weight: medium;
+    letter-spacing: 2px;
+  }
+
+  .homePage_ad{
+    margin-top: 60px;
+  }
+
+  .form-container{
+    width: 100%;
+    margin: auto;
+  }
+
+  .info-container{
+    margin-top: 52px;
+  }
+
+}
+
+
+/* =======  media query ========= */
+
+@media only screen and (max-width:600px) {
+
+  .homePage_ad{
+    margin-top: 20px;
+  }
+
+  .homePage_ad h4{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #ac6d7e;
+    font-size: 4vw;
+  }
+  
+  .homePage_ad h1{
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #96304c; 
+    font-size: 8vw;
+  }
+
+  .contactPage-main input{
+    width: 90%;
+    margin: 10px;
+  }
+
+  .contactPage-main textarea{
+    width: 90%;
+    margin: 10px;
+
+  }
+
+  footer .col-sm-4 li{
+    display: inline-block;
+    margin: 2px;
+  }
+ 
+  footer .col-sm-6{
+    padding: 20px;
+  }
+  footer .col-sm-8{
+    width: 600px;
+  }
+
+  footer .col-md-4 ul{
+    width: 100%;
+    text-align: center;
+    margin-bottom: -10px;  
+  }
+
+  footer .address{
+    margin-left: -30px;
+    margin-right: 10px;
+  }
+
+  .need-help-title img{
+    width: 150px;
+  }
+
+  .gallery-carousel{
+    display: block;
+    margin: 30px;
+  }
+
+  .gallery-container
+  {
+    display: none;
+  }
+  
+  nav li{
+    font-size: 15px;
+  }
+
+  .collapse ul{
+    margin-bottom: 20px;
+  }
+
+  .error-container h1{
+    font-size: 3em;
+  }
+
+
+}
+
+
+/*==================== GALLERY============== */
+
+
+.gallery-container hr{
+  width: 50%;
+  margin: auto;
+ height: 2px;
+ border-radius: 300px;
+  background-color: #d3649c;
+}
+
+.gallery-container h3{
+  margin: auto;
+  color: #ab3470;
+  letter-spacing: 2px;
+
+}
+
+.gallery-container{
+  margin: auto;
+}
+
+.gallery-container img{
+  transition: 1s;
+
+}
+
+.gallery-container img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+
+.gallery-container img{
+  transition: 1s;
+ width: 150px;
+}
+
+/* GALLERY CAROUSEL */
+
+.gallery-carousel hr{
+  width: 50%;
+  margin: auto;
+ height: 2px;
+ border-radius: 300px;
+  background-color: #d3649c;
+}
+
+.gallery-carousel h3{
+  margin: auto;
+  color: #ab3470;
+  letter-spacing: 2px;
+
+}
+
+
+/* MODAL */
+
+.modal input{
+  width: 90%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: black;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 2px;
+  padding: 5px;
+  margin: 15px;
+  outline: none;
+}
+
+.modal .form-container{
+  width: 100%;
+}
+
+.modal .form-container button{
+  margin: 0px 20px 20px 20px;
+}

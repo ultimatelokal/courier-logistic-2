@@ -1,0 +1,374 @@
+<?php include 'contactUs-mail.php'?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/bootstrap.css">    
+   <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link rel="shortcut icon" type="image/jpg" href="images/icons/favicon.ico"/>
+  <title>Princess Courier</title>
+</head>
+
+<body>
+  <header>
+    <!-- NAVBAR -->
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-md">
+        <a class="navbar-brand" href="index.php"><img src="images/icons/logo.png" width="200" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class=" ms-auto navbar-nav justify-content-end fs-5 text">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.php">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.php">TESTIMONIALS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href = "contact.php">
+                CONTACT US
+              </a>
+            </li>
+          </ul>
+        </div>      
+      </div>
+    </nav>
+    <!-- customer login -->
+    <div class="nav-login-container bg-primary ">
+      <div class=" d-flex flex-row-reverse bd-highlight container-md ">
+        <div class="nav-login p-2 bd-highlight">
+          <a href="https://app.princesscourier.com/login"><i class="fa fa-user-circle fa-fw" aria-hidden="true"></i>
+          Customer Login</a>
+        </div> 
+        <div class="nav-login p-2 bd-highlight">
+          <a href="" data-bs-toggle="modal"  data-bs-target="#exampleModal"><i class="fa fa-clipboard fa-fw" aria-hidden="true"></i>
+          Get Quote</a>
+        </div> 
+        <div class="nav-login p-2 bd-highlight">
+          <a href="tel:604-229-4412"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+          Call Us</a>
+        </div>    
+      </div>
+  
+    </div>
+  </header>
+
+  <main>
+
+        <!--alert messages start-->
+        <?php echo $alert; ?>
+        <!--alert messages end-->
+
+    <!-- Modal -->
+    
+<div class=" modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get Quote</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-container ">            
+            
+          <div class="form-body">
+            <div class="form-head">
+              <h4> EMAIL US</h4>
+            </div>
+            <div class="form-content">
+              <form action="" method="post">
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <input class="" type="text" required placeholder="Company Name *" name="company-name">
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <input class="" type="text" required placeholder="Full Name *" name="user-name">
+                </div>
+  
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <input class="" type="email" required placeholder="Email *" name="email">
+                </div>
+  
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <input class="" type="number"  required placeholder="Phone Number *" name="phone-number">
+                </div>
+  
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <textarea class="" name="inquiry-message" rows="4" placeholder="Feel free to tell us about your concern*" id="message" name="message" required></textarea>
+                </div>
+  
+                <button class="btn btn-primary" type="submit" name="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Carousel -->
+    <div class="carousel-container">
+      <div id="carouselExampleDark" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="images/carousel/carousel_2.png" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MM PRINCESS COURIER LOGISTICS LTD</h5>
+              <p>COURIER SERVICES IN LOWER MAINLAND BRITISH COLUMBIA</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="images/carousel/carousel_1.png" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>We deliver fast and safe with a smile</h5>
+              <p>COURIER SERVICES IN LOWER MAINLAND BRITISH COLUMBIA</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="images/carousel/carousel_3.png" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>WE PUT PRIDE IN OUR WORKS</h5>
+              <p>COURIER SERVICES IN LOWER MAINLAND BRITISH COLUMBIA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-md">
+
+      <div class="homePage_container row container-fluid">
+
+        <div class="homePage_ad col-lg-6 col-md-6 d-inline">         
+          <h4>Get things done like never before</h4>
+          <h1>Professional Courier <br>in 
+            Cost-effective price
+          </h1>
+          <h4>100% Fast, Safe and Trained Courier</h4>
+          <a href="#" data-bs-toggle="modal"  data-bs-target="#exampleModal" class="btn btn-primary">Get a quote</a>          
+          <!-- <img class="img-fluid" src="images/icons/ads.png" > -->
+        </div>
+
+        <div class="homePage_img col-lg-6 col-md-6 d-inline text-center">
+          <img class="" src="images/icons/delivery_guy.png" width="300">
+        </div>  
+
+      </div>
+
+      <div class="homePage_ads2 row mt-3">
+
+        <div class="col-lg-4 col-md-12 p-3">
+          <div class="card shadow-sm p-3 mb-5 bg-body rounded" >
+            <img class="img-fluid p-2 rounded-3" src="images/gallery/11.png" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title">WHO WE ARE</h5>
+              <p class="card-text">We are a local courier logistics company located in British Columbia Canada we provide safe and fast delivery and most of all affordable price to our clients we do have licensed and certified delivery driver in our company.
+  
+                We provide contact less delivery to our clients, its for the safety of our customer and our team, we deliver as fast and safe as we can and provide you with a good smile</p>           
+                <img class="img-fluid" src="images/icons/abb.png"  width= "150" >     
+            </div>
+        
+           
+          </div>                     
+       </div>
+       
+       <div class="col-lg-4 col-md-12 p-3">
+        <div class="card shadow-sm p-3 mb-5 bg-body rounded" >
+          <img  class="img-fluid p-2 rounded-3" src="images/gallery/6.png" class="card-img-top" >
+          <div class="card-body">
+            <h5 class="card-title">WHY CHOOSE US</h5>
+            <p class="card-text">Princess courier, a company registered in British columbia, provides a good quality delivery service. We pride ourselves on our unique approach to delivery services</p>
+          </div>                         
+        </div>
+       </div>
+  
+       <div class="col-lg-4 col-md-12 p-3">
+       <div class="card shadow-sm p-3 mb-5 bg-body rounded" >
+          <img  class="img-fluid p-2 rounded-3" src="images/gallery/4.png" class="card-img-top" >
+          <div class="card-body">
+            <h5 class="card-title">WHAT TO EXPECT</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">• FAST AND SAFE DELIVERY</li>
+              <li class="list-group-item">• RELIABLE VEHICLE</li>
+              <li class="list-group-item">• EXCELLENT CUSTOMER SERVICE</li>
+              <li class="list-group-item">• FREE QUOTATION</li>
+              <li class="list-group-item">• RELIABLE AND QUALITY SERVICES</li>
+              <li class="list-group-item">• DRIVERS ARE WELL TRAINED</li>
+              <li class="list-group-item">• DELIVER DANGEROUS GOODS </li>
+              <li class="list-group-item">• TDG CERTIFIED </li>
+            </ul>
+          </div>                         
+        </div>          
+       </div>
+
+      </div>
+
+      <div class="homePage_Offer row">
+             
+      <!-- <div class="col-lg-12 col-md-12">
+        <div class="" >          
+          <div class="card-body">
+            <h5 class="card-title text-center">SERVICES WE OFFER :</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">• ON DEMAND SERVICES</li>
+              <li class="list-group-item">• VEHICLE OUTSOURCING</li>
+              <li class="list-group-item">• INTERCITY SERVICES</li>
+              <li class="list-group-item">• DISTRIBUTION</li>
+              <li class="list-group-item">• WAREHOUSING</li>
+              <li class="list-group-item">• LOGISTICS SERVICES</li>
+              <li class="list-group-item">• MEDICAL COURIER</li>            
+            </ul>
+          </div>   
+          
+          <div class="card-body">
+            <h5 class="card-title text-center">MULTI INDUSTRY SERVICES :</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">• AUTOMOTIVE</li>
+              <li class="list-group-item">• ELECTRONICS</li>
+              <li class="list-group-item">• FOOD</li>
+              <li class="list-group-item">• MEDICAL</li>
+              <li class="list-group-item">• CONSTRUCTION</li>              
+            </ul>
+          </div>              
+        </div>          
+       </div> -->
+       <div class="accordion" id="accordion-services">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              SERVICES WE OFFER
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-services">
+            <div class="accordion-body">
+              <div class="card-body">                            
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">• ON DEMAND SERVICES</li>
+                  <li class="list-group-item">• VEHICLE OUTSOURCING</li>
+                  <li class="list-group-item">• INTERCITY SERVICES</li>
+                  <li class="list-group-item">• DISTRIBUTION</li>
+                  <li class="list-group-item">• WAREHOUSING</li>
+                  <li class="list-group-item">• LOGISTICS SERVICES</li>
+                  <li class="list-group-item">• MEDICAL COURIER</li>            
+                </ul>
+                <div class="d-flex flex-row-reverse">
+                  <a href="#" data-bs-toggle="modal"  data-bs-target="#exampleModal" class="btn btn-primary">Get a quote</a>
+                </div>
+              </div> 
+            
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              MULTI INDUSTRY SERVICES 
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-services">
+            <div class="accordion-body">
+              <div class="card-body">                
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">• AUTOMOTIVE</li>
+                  <li class="list-group-item">• ELECTRONICS</li>
+                  <li class="list-group-item">• FOOD</li>
+                  <li class="list-group-item">• MEDICAL</li>
+                  <li class="list-group-item">• CONSTRUCTION</li>              
+                </ul>
+                <div class="d-flex flex-row-reverse">
+                  <a href="#" data-bs-toggle="modal"  data-bs-target="#exampleModal" class="btn btn-primary">Get a quote</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+        
+      </div>
+
+    </div>
+   
+
+  </main>
+
+<!-- FOOTER -->
+
+    <footer class="bg-primary text-light">
+      
+      <div class="container-md">
+        <div class="d-flex row">
+          <div class="col-sm-8 d-flex justify-content-center ">
+            <div class="address col-sm-8 d-flex justify-content-center">
+              <ul>
+                <li>12915 88 Ave Surrey,</li>
+                <li> BC V3W 3K2 </li>
+                <li>Canada</li>
+                <li><a href="tel:604-229-4412"> (604)-229-4412 </a></li>
+                
+              </ul>
+            </div>
+            <div class="col-sm-8 d-flex justify-content-center">
+              <div>
+               
+                <p> 
+                MM PRINCESS COURIER LOGISTICS LTD. is a company that delivers fast, safe and with a smile to our customers, we are courier company located in B.C
+             
+                </p>  
+                Follow Us On
+                <a 
+                href="https://www.instagram.com/princesscourierlogistics/" data-bs-toggle="tooltip" 
+                data-bs-placement="top" 
+                title="Instagram">
+                  <i 
+                  class="fa fa-instagram fa-2x fa-fw" 
+                  href="www.instagram.com"></i>
+                </a> <br>
+                Email Us At :
+                <a href="mailto:info@princesscourier.com"> info@princesscourier.com </a>
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-4 d-flex justify-content-center">
+              <div>
+                <ul>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="aboutus.php">About Us</a></li>
+                  <li><a href="testimonials.php">Testimonials</a></li>
+                  <li><a href="contact.php">Contact Us</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr>
+      <div class="copy-right">
+        <p> MM PRINCESS COURIER LOGISTICS LTD © 2020 </p>
+      </div>
+    </footer>
+
+
+
+  
+</body> 
+  <script src="js/bootstrap.js"></script>
+</html>
