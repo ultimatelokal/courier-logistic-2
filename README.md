@@ -1,3 +1,3 @@
 # courier-logistic-2
 
-Redesigning one of my client website.
+Deisng purposes only. I update the design for Princess Courier Website.
